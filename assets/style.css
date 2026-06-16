@@ -27,13 +27,27 @@ p{
 }
 
 h1{
-    font-size: 36px;
-    font-weight: 700;
-     line-height: 1.25;
+    font-size: 48px;
+    color: #1a202c;
+    line-height: 1.25;
 }
 
 section{
     padding: 0 32px;
+}
+
+.section__title {
+  font-size: 48px;
+  font-weight: 900;
+  color: rgb(36, 62, 99);
+  line-height: 1.5;
+  margin: 16px 0;
+  letter-spacing: 0.025em;
+}
+
+#features .section__title,
+#pricing .section__title {
+  text-align: center;
 }
 
 button{
@@ -148,12 +162,12 @@ nav{
 
 
 .nav__logo--title{
-    display: flex;
-    position: relative;
-     font-weight: 700;
-    align-items: center;
-     margin-left: 12px;
-     font-size: 30px;
+  font-weight: 900;
+    font-size: 24px;
+    margin-left: 12px;
+    padding-bottom: 2px;
+    letter-spacing: 0.6px;
+    
 }
 
 .nav__logo--img{
@@ -244,12 +258,10 @@ nav{
 Header Section
 
 */
-.header__row{
+header .row{
     display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content:absolute;
+   align-items: center;
+    justify-content:space-between;
      
 }
 
@@ -326,9 +338,8 @@ button{
      opacity:0.5}
 
 .header__img--wrapper{
-    width: calc(100% - 40%);
-    display: flex;
-    justify-content: flex-end;
+    
+   
 }
 
 .header__img--email{
@@ -340,8 +351,11 @@ opacity: 0.5;
 .header__img{
 width: 100%;
 
-    
+}
 
+.header__img--wrapper{
+  width: 60%;
+  
 }
 
 .container{
@@ -1238,13 +1252,13 @@ SMALL DEVICES
   .service__description--para {
     max-width: none;
   }
-  .section__para {
+  .services__description {
     font-size: 16px;
   }
-  .section__title {
+  .services__title--description {
     font-size: 36px;
   }
-  .quality__description {
+  .design__description {
     margin-right: 0px;
     padding-right: 48px;
   }
